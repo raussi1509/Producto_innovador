@@ -1,128 +1,227 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Ficha Visual - Caso Marcos y Laura</title>
-</head>
 
-<style>body{
-    font-family: Arial, sans-serif;
+<style>
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
     background:#f4f6f9;
-    margin:20px;
+    margin:30px;
 }
 
 .container{
-    max-width:900px;
+    max-width:1400px;
     margin:auto;
 }
 
 h1{
     text-align:center;
-    color:#1a365d;
+    color:#1f3c88;
     margin-bottom:5px;
 }
 
 h2{
     text-align:center;
-    color:#555;
+    color:#666;
     font-size:18px;
     margin-bottom:25px;
 }
 
-.card{
-    background:white;
-    border-radius:12px;
-    padding:15px;
-    margin-bottom:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+.row{
+    display:grid;
+    grid-template-columns: 1.4fr 1.3fr 0.9fr 1.5fr 1.5fr;
+    gap:10px;
+    margin-bottom:10px;
 }
 
-.etapa{
-    padding:10px;
-    border-radius:8px;
-    margin:8px 0;
+.header div{
+    background:#1f3c88;
+    color:white;
     font-weight:bold;
-}
-
-.conducta{background:#dbeafe;}
-.infraccion{background:#fef3c7;}
-.articulo{background:#dcfce7;}
-.elemento{background:#fde2e2;}
-.prueba{background:#e9d5ff;}
-
-.flecha{
     text-align:center;
-    font-size:22px;
-    font-weight:bold;
-    color:#555;
+    padding:12px;
+    border-radius:8px;
 }
 
-.footer{
-    margin-top:20px;
-    padding:15px;
+.cell{
     background:white;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    padding:12px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,.08);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:90px;
 }
 
-.small{
-    font-size:14px;
+.conducta{
+    border-left:6px solid #3b82f6;
 }
+
+.infraccion{
+    border-left:6px solid #f59e0b;
+}
+
+.articulo{
+    border-left:6px solid #10b981;
+    font-weight:bold;
+}
+
+.elemento{
+    border-left:6px solid #ef4444;
+}
+
+.prueba{
+    border-left:6px solid #8b5cf6;
+}
+
+.note{
+    margin-top:25px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,.08);
+}
+
+.note h3{
+    margin-top:0;
+    color:#1f3c88;
+}
+
 </style>
+</head>
 
 <body>
 
 <div class="container">
 
 <h1>FICHA VISUAL</h1>
-<h2>Laboratorio de Calificación Jurídica: Libertad y Amenazas en el Entorno Digital</h2>
 
-<div class="card">
+<h2>
+Laboratorio de Calificación Jurídica:
+Libertad y Amenazas en el Entorno Digital
+</h2>
 
-<div class="etapa conducta">
-CONDUCTA<br>
-Amenaza: "Si no vuelves conmigo, publicaré tus fotografías íntimas".
+<div class="row header">
+    <div>CONDUCTA</div>
+    <div>POSIBLE INFRACCIÓN</div>
+    <div>ARTÍCULO</div>
+    <div>ELEMENTO QUE DEBE COMPROBARSE</div>
+    <div>PRUEBA RELEVANTE</div>
 </div>
 
-<div class="flecha">↓</div>
+<div class="row">
 
-<div class="etapa infraccion">
-POSIBLE INFRACCIÓN<br>
-Violencia por intimidación o persecución.
-</div>
+    <div class="cell conducta">
+        “Si no vuelves conmigo, publicaré tus fotografías íntimas”
+    </div>
 
-<div class="flecha">↓</div>
+    <div class="cell infraccion">
+        Chantaje
+    </div>
 
-<div class="etapa articulo">
-ARTÍCULO<br>
-Art. 124, Ley 74-25.
-</div>
+    <div class="cell articulo">
+        Art. 233
+    </div>
 
-<div class="flecha">↓</div>
+    <div class="cell elemento">
+        Existencia de una amenaza dirigida a obtener una conducta determinada.
+    </div>
 
-<div class="etapa elemento">
-ELEMENTO A COMPROBAR<br>
-Existencia del mensaje y finalidad de intimidar o controlar a la víctima.
-</div>
-
-<div class="flecha">↓</div>
-
-<div class="etapa prueba">
-PRUEBA RELEVANTE<br>
-Capturas de pantalla, peritaje digital y registro de comunicaciones.
-</div>
+    <div class="cell prueba">
+        Historial completo de comunicaciones y peritaje digital.
+    </div>
 
 </div>
 
-<div class="footer">
-<h3>Conclusión Provisional</h3>
-<p class="small">
-Los hechos descritos podrían relacionarse con violencia psicológica,
-intimidación y una posible afectación a la libertad individual. Sin embargo,
-la calificación definitiva dependerá de las pruebas que permitan acreditar
-la existencia de los hechos, la autoría de los mensajes y la verdadera
-restricción de la libertad de movimiento de la víctima.
+<div class="row">
+
+    <div class="cell conducta">
+        Cerrar la puerta del establecimiento e impedir la salida.
+    </div>
+
+    <div class="cell infraccion">
+        Secuestro
+    </div>
+
+    <div class="cell articulo">
+        Art. 168
+    </div>
+
+    <div class="cell elemento">
+        Privación efectiva de libertad y existencia de una condición para la liberación.
+    </div>
+
+    <div class="cell prueba">
+        Registro de acceso y salida, cámaras de seguridad y testimonios.
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="cell conducta">
+        Exigir la reanudación de la relación sentimental.
+    </div>
+
+    <div class="cell infraccion">
+        Violencia doméstica o intrafamiliar
+    </div>
+
+    <div class="cell articulo">
+        Art. 124
+    </div>
+
+    <div class="cell elemento">
+        Existencia de intimidación, control o presión emocional.
+    </div>
+
+    <div class="cell prueba">
+        Historial de mensajes, declaraciones y contexto relacional.
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="cell conducta">
+        Retención del teléfono durante cuarenta minutos.
+    </div>
+
+    <div class="cell infraccion">
+        Elemento de control o intimidación.
+    </div>
+
+    <div class="cell articulo">
+        Arts. 124 y 168
+    </div>
+
+    <div class="cell elemento">
+        Relación entre la retención del dispositivo y la conducta denunciada.
+    </div>
+
+    <div class="cell prueba">
+        Cámaras de seguridad, declaración de la testigo y evidencia digital.
+    </div>
+
+</div>
+
+<div class="note">
+
+<h3>Diferencia entre existencia y autoría del mensaje</h3>
+
+<p>
+La existencia de un mensaje acredita que una comunicación fue emitida.
+La autoría acredita quién emitió dicha comunicación.
+Por ello, una captura de pantalla puede demostrar que el mensaje existe,
+pero no necesariamente que fue enviado por Marcos. La autoría requiere
+pruebas adicionales que vinculen la comunicación con una persona determinada.
 </p>
+
 </div>
 
 </div>
